@@ -7,21 +7,14 @@ A console-based Library Management System implemented in C++, utilizing Object-O
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [OOP Concepts Implemented](#oop-concepts-implemented)
-- [Directory Structure](#directory-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Compilation and Execution](#compilation-and-execution)
 - [Usage](#usage)
-- [Functionalities](#functionalities)
-  - [1. Add Book](#1-add-book)
-  - [2. Remove Book](#2-remove-book)
-  - [3. List Books](#3-list-books)
-  - [4. Register Member](#4-register-member)
+- [Functionalities]
+  - [1. Add Book]
+  - [2. Remove Book]
+  - [3. List Books]
+  - [4. Register Member]
   - [5. Borrow Book](#5-borrow-book)
   - [6. Return Book](#6-return-book)
-- [Console Output Enhancements](#console-output-enhancements)
-- [Possible Extensions](#possible-extensions)
-- [License](#license)
 
 ## Project Overview
 
