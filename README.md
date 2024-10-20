@@ -13,7 +13,7 @@ A console-based Library Management System implemented in C++, utilizing Object-O
   - [2. Remove Book]
   - [3. List Books]
   - [4. Register Member]
-  - [5. Borrow Book](#5-borrow-book)
+  - (#5-borrow-book)
   - [6. Return Book](#6-return-book)
 
 ## Project Overview
