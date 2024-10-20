@@ -22,12 +22,12 @@ The Library Management System is designed to manage books and members in a libra
 - **Console Enhancements**: Colored text and styled headers improve readability.
 
 ## Functionalities
-  - 1. Add Book
-  - 2. Remove Book
-  - 3. List Books
-  - 4. Register Member
-  - 5. Borrow Book
-  - 6. Return Book
+1. Add Book
+2. Remove Book
+3. List Books
+4. Register Member
+5. Borrow Book
+6. Return Book
 
 ## OOP Concepts Implemented
 
@@ -36,3 +36,9 @@ The Library Management System is designed to manage books and members in a libra
 - **Polymorphism**: Overriding the `displayInfo()` method in derived classes.
 - **Encapsulation**: Using access specifiers to protect class members.
 - **Abstraction**: Hiding complex implementation details from the user.
+
+## Usage
+
+1. **Clone the github repository**
+2. **Navigate to the root directory of the project**
+3. **Run the library_management.exe file**
