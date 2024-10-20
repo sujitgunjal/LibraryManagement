@@ -58,7 +58,7 @@ The **Library Management System** is designed to efficiently manage books 📚 a
 
 2. **Navigate to the Project Directory**
    ```bash
-   cd library-management-pp
+   cd Library-Management-PP
    ```
 
 3. **Run the executable file**
