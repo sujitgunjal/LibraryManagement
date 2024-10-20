@@ -6,15 +6,9 @@ A console-based Library Management System implemented in C++, utilizing Object-O
 
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [Functionalities](#functionalities)
 - [OOP Concepts Implemented](#oop-concepts-implemented)
 - [Usage](#usage)
-- [Functionalities]
-  - [1. Add Book]
-  - [2. Remove Book]
-  - [3. List Books]
-  - [4. Register Member]
-  - (#5-borrow-book)
-  - [6. Return Book](#6-return-book)
 
 ## Project Overview
 
@@ -26,6 +20,14 @@ The Library Management System is designed to manage books and members in a libra
 - **OOP Implementation**: Uses classes, inheritance, and polymorphism.
 - **Error Handling**: Validates user inputs and handles errors gracefully.
 - **Console Enhancements**: Colored text and styled headers improve readability.
+
+## Functionalities
+  - 1. Add Book
+  - 2. Remove Book
+  - 3. List Books
+  - 4. Register Member
+  - 5. Borrow Book
+  - 6. Return Book
 
 ## OOP Concepts Implemented
 
