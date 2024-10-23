@@ -4,27 +4,29 @@
 #include "Utility.h"
 #include <climits>
 
+using namespace std;
+
 int main() {
     Library library;
     int choice;
 
     do {
         Utility::printHeader("Library Management System");
-        std::cout << "1. Add Book\n";
-        std::cout << "2. Remove Book\n";
-        std::cout << "3. List Books\n";
-        std::cout << "4. Register Member\n";
-        std::cout << "5. Borrow Book\n";
-        std::cout << "6. Return Book\n";
-        std::cout << "7. Exit\n";
-        std::cout << "Enter your choice: ";
-        std::cin >> choice;
+        cout << "1. Add Book\n";
+        cout << "2. Remove Book\n";
+        cout << "3. List Books\n";
+        cout << "4. Register Member\n";
+        cout << "5. Borrow Book\n";
+        cout << "6. Return Book\n";
+        cout << "7. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
 
-        while (std::cin.fail()) {
-            std::cin.clear(); // Clear the error flags
-            std::cin.ignore(INT_MAX, '\n'); // Discard invalid input
-            std::cout << "Invalid input. Please enter a number: ";
-            std::cin >> choice;
+        while (cin.fail()) {
+            cin.clear(); // Clear the error flags
+            cin.ignore(INT_MAX, '\n'); // Discard invalid input
+            cout << "Invalid input. Please enter a number: ";
+            cin >> choice;
         }
 
         switch (choice) {
@@ -47,10 +49,10 @@ int main() {
                 library.returnBook();
                 break;
             case 7:
-                std::cout << "Thank you for using the Library Management System!\n";
+                cout << "Thank you for using the Library Management System!\n";
                 break;
             default:
-                std::cout << "Invalid choice! Please try again.\n";
+                cout << "Invalid choice! Please try again.\n";
         }
 
     } while (choice != 7);

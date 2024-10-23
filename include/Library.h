@@ -7,11 +7,13 @@
 #include "User.h"
 #include "Loan.h"
 
+using namespace std;
+
 class Library {
 private:
-    std::vector<Book> books;
-    std::vector<Member> members;
-    std::vector<Loan> loans;
+    vector<Book> books;
+    vector<Member> members;
+    vector<Loan> loans;
 
 public:
     void addBook();

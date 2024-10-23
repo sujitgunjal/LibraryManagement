@@ -3,19 +3,21 @@
 
 #include <string>
 
+using namespace std;
+
 class Book {
 protected:
     int bookID;
-    std::string title;
-    std::string author;
+    string title;
+    string author;
     int totalCopies;
     int availableCopies;
 
 public:
-    Book(int id, const std::string& t, const std::string& a, int copies);
+    Book(int id, const string& t, const string& a, int copies);
     int getBookID() const;
-    std::string getTitle() const;
-    std::string getAuthor() const;
+    string getTitle() const;
+    string getAuthor() const;
     int getTotalCopies() const;
     int getAvailableCopies() const;
 

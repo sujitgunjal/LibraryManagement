@@ -6,24 +6,26 @@
 #include <vector>
 #include "Loan.h"
 
+using namespace std;
+
 class User {
 protected:
     int userID;
-    std::string name;
+    string name;
 
 public:
-    User(int id, const std::string& n);
+    User(int id, const string& n);
     virtual void displayInfo() const;
     int getUserID() const;
-    std::string getName() const;
+    string getName() const;
 };
 
 class Member : public User {
 private:
-    std::vector<Loan> loans;
+    vector<Loan> loans;
 
 public:
-    Member(int id, const std::string& n);
+    Member(int id, const string& n);
     void addLoan(const Loan& loan);
     void removeLoan(int bookID);
     void displayLoans() const;
@@ -32,7 +34,7 @@ public:
 
 class Librarian : public User {
 public:
-    Librarian(int id, const std::string& n);
+    Librarian(int id, const string& n);
     void displayInfo() const override;
     // Additional librarian-specific functionalities can be added here
 };

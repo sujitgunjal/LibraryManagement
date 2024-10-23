@@ -4,6 +4,8 @@
 
 #include <string>
 
+using namespace std;
+
 namespace Utility {
     enum ConsoleColor {
 #ifdef _WIN32
@@ -38,7 +40,7 @@ namespace Utility {
 
     void setColor(ConsoleColor color);
     void resetColor();
-    void printHeader(const std::string& header);
+    void printHeader(const string& header);
 }
 
 #endif // UTILITY_H

@@ -3,26 +3,28 @@
 #include <iostream>
 #include <algorithm>
 
+using namespace std;
+
 // Base User class
-User::User(int id, const std::string& n) : userID(id), name(n) {}
+User::User(int id, const string& n) : userID(id), name(n) {}
 
 void User::displayInfo() const {
-    std::cout << "User ID: " << userID << "\nName: " << name << "\n";
+    cout << "User ID: " << userID << "\nName: " << name << "\n";
 }
 
 int User::getUserID() const { return userID; }
-std::string User::getName() const { return name; }
+string User::getName() const { return name; }
 
 // Member class
-Member::Member(int id, const std::string& n) : User(id, n) {}
+Member::Member(int id, const string& n) : User(id, n) {}
 
 void Member::addLoan(const Loan& loan) {
     loans.push_back(loan);
 }
 
 void Member::removeLoan(int bookID) {
-    auto it = std::remove_if(loans.begin(), loans.end(),
-                             [bookID](const Loan& l) { return l.getBookID() == bookID; });
+    auto it = remove_if(loans.begin(), loans.end(),
+                        [bookID](const Loan& l) { return l.getBookID() == bookID; });
     if (it != loans.end()) {
         loans.erase(it, loans.end());
     }
@@ -30,25 +32,25 @@ void Member::removeLoan(int bookID) {
 
 void Member::displayLoans() const {
     if (loans.empty()) {
-        std::cout << "No loans.\n";
+        cout << "No loans.\n";
     } else {
         for (const auto& loan : loans) {
-            std::cout << "Loan ID: " << loan.getLoanID()
-                      << ", Book ID: " << loan.getBookID()
-                      << ", Due Date: " << loan.getDueDate() << "\n";
+            cout << "Loan ID: " << loan.getLoanID()
+                 << ", Book ID: " << loan.getBookID()
+                 << ", Due Date: " << loan.getDueDate() << "\n";
         }
     }
 }
 
 void Member::displayInfo() const {
     User::displayInfo();
-    std::cout << "Role: Member\n";
+    cout << "Role: Member\n";
 }
 
 // Librarian class
-Librarian::Librarian(int id, const std::string& n) : User(id, n) {}
+Librarian::Librarian(int id, const string& n) : User(id, n) {}
 
 void Librarian::displayInfo() const {
     User::displayInfo();
-    std::cout << "Role: Librarian\n";
+    cout << "Role: Librarian\n";
 }

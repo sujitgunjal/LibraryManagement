@@ -7,6 +7,8 @@
 #include <unistd.h>
 #endif
 
+using namespace std;
+
 namespace Utility {
 
 void setColor(ConsoleColor color) {
@@ -14,7 +16,7 @@ void setColor(ConsoleColor color) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, color);
 #else
-    std::cout << "\033[" << static_cast<int>(color) << "m";
+    cout << "\033[" << static_cast<int>(color) << "m";
 #endif
 }
 
@@ -22,13 +24,13 @@ void resetColor() {
 #ifdef _WIN32
     setColor(WHITE);
 #else
-    std::cout << "\033[0m";
+    cout << "\033[0m";
 #endif
 }
 
-void printHeader(const std::string& header) {
+void printHeader(const string& header) {
     setColor(YELLOW);
-    std::cout << "\n========== " << header << " ==========\n";
+    cout << "\n========== " << header << " ==========\n";
     resetColor();
 }
 

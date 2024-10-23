@@ -4,19 +4,21 @@
 
 #include <string>
 
+using namespace std;
+
 class Loan {
 private:
     int loanID;
     int userID;
     int bookID;
-    std::string dueDate;
+    string dueDate;
 
 public:
-    Loan(int lID, int uID, int bID, const std::string& date);
+    Loan(int lID, int uID, int bID, const string& date);
     int getLoanID() const;
     int getUserID() const;
     int getBookID() const;
-    std::string getDueDate() const;
+    string getDueDate() const;
 };
 
 #endif // LOAN_H
